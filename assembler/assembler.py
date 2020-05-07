@@ -48,10 +48,17 @@ def main(argv):
                     base = format(int(args[1].split('(')[1].split(')')[0].strip("$ ")), "05b")
                     instr = opcode + base + reg + offset
                 
-            fout.write(instr[0:8]   + '\n')
-            fout.write(instr[8:16]  + '\n')
-            fout.write(instr[16:24] + '\n')
+            # BIG ENDIAN
+            # fout.write(instr[0:8]   + '\n')
+            # fout.write(instr[8:16]  + '\n')
+            # fout.write(instr[16:24] + '\n')
+            # fout.write(instr[24:32] + '\n')
+            
+            # LITTLE ENDIAN
             fout.write(instr[24:32] + '\n')
+            fout.write(instr[16:24] + '\n')
+            fout.write(instr[8:16]  + '\n')
+            fout.write(instr[0:8]   + '\n')
 
 if __name__ == '__main__':
     main(sys.argv[1])

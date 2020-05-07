@@ -47,10 +47,10 @@ module fetch(
     end
 
 //    BIG ENDIAN
-    assign inst = {inst_mem[{pc, 2'b00}], inst_mem[{pc, 2'b01}], inst_mem[{pc, 2'b10}], inst_mem[{pc, 2'b11}]};
+//    assign inst = {inst_mem[{pc, 2'b00}], inst_mem[{pc, 2'b01}], inst_mem[{pc, 2'b10}], inst_mem[{pc, 2'b11}]};
     
 //    LITTLE ENDIAN
-//    assign inst = {inst_mem[{pc, 2'b11}], inst_mem[{pc, 2'b10}], inst_mem[{pc, 2'b01}], inst_mem[{pc, 2'b00}]};
+    assign inst = {inst_mem[{pc, 2'b11}], inst_mem[{pc, 2'b10}], inst_mem[{pc, 2'b01}], inst_mem[{pc, 2'b00}]};
     assign jump_target = {pc[29:26], prev_inst[25:0]};
     
     wire [29:0] tmp2, tmp3;
