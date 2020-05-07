@@ -1,4 +1,8 @@
-# 2-stage Pipelined MIPS Processor
+# MIPS Processor
+
+It is a **2-stage pipelined MIPS Processor** which has been designed using Verilog.
+
+
 
 ## Architectural Diagrams:
 
@@ -58,4 +62,8 @@
 * Use the console to see the output.
 * A sample program with both its assembly code and machine code is present in the directory `sample-program/`. **NOTE:** The sample machine code is in BIG ENDIAN encoding.
 
----
+
+
+## Author
+
+* [ShivanshRakesh](https://github.com/shivanshrakesh)
