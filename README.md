@@ -7,13 +7,13 @@ It is a **2-stage pipelined MIPS Processor** which has been designed using Veril
 ## Architectural Diagrams:
 
 #### 2-stage Pipelined Design:
-![](./pipelined-design.png)
+![](./res/pipelined-design.png)
 
 #### Fetch Stage:
-![](./fetch.png)
+![](./res/fetch.png)
 
 #### Decode/Execute Stage:
-![](./execute.png)
+![](./res/execute.png)
 
 ## Main Memory Design:
 
@@ -66,4 +66,4 @@ It is a **2-stage pipelined MIPS Processor** which has been designed using Veril
 
 ## Author
 
-* [ShivanshRakesh](https://github.com/shivanshrakesh)
+* [Shivansh Rakesh](https://github.com/shivanshrakesh)
